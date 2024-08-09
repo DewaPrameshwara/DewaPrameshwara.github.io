@@ -1,0 +1,21 @@
+:root {
+  --black: #0c1718;
+  --blue: #80f0ff;
+  --gray: #283334;
+}
+.home {
+  min-height: 100vh;
+  background-color: var(--black);
+  /* background-repeat: no-repeat;
+  background-image: url(img/blob.svg);
+  background-image: url(img/photo_profil.png); */
+}
+
+nav {
+  background-color: rebeccapurple;
+}
+
+nav a i {
+  font-size: 30px;
+  color: var(--blue);
+}
