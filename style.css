@@ -12,10 +12,34 @@
 }
 
 nav {
-  background-color: rebeccapurple;
+  position: absolute;
+  top: 15%;
 }
 
 nav a i {
   font-size: 30px;
   color: var(--blue);
+}
+
+nav a i:hover {
+  color: #a70c9a;
+}
+
+.desk h6 {
+  color: var(--blue);
+  font-family: pragmatica, sans-serif;
+  text-transform: uppercase;
+  font-weight: 800;
+}
+
+.foto img {
+  background-image: url(img/blob.svg);
+  background-repeat: no-repeat;
+  background-size: 130%;
+  background-position: center;
+}
+
+.nama h1 {
+  color: var(--blue);
+  font-size: 4rem;
 }
