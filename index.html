@@ -10,11 +10,11 @@
   </head>
   <body>
 
-    <nav class="nav flex-column justify-content-evenly position-absolute">
-        <a class="nav-link" href="#home">
+    <nav class="nav flex-column justify-content-evenly position-absolute ms-3">
+        <a class="nav-link" href="https://github.com/DePram">
           <i class="bi bi-github"></i>
         </a>
-        <a class="nav-link  mt-3" href="#">
+        <a class="nav-link  mt-3" href="#home">
           <i class="bi bi-house-fill"></i>
         </a>
         <a class="nav-link  mt-3" href="#">
@@ -31,26 +31,36 @@
     </nav>
     <section id="home" class="home pt-5">
       <div class="container">
-        <div class="row desk ms-5">
-          <div class="col-lg-8 col-md-12">
-            <h6>
-              Ordianry Person | Student
+        <span class="shapes position-absolute">
+          <!-- <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg"> -->
+            <path fill="#80F0FF" d="M49.9,-51.7C60.6,-39.2,62.4,-19.6,62.5,0.2C62.7,20,61.4,40,50.7,55.1C40,70.2,20,80.5,1.5,79C-16.9,77.4,-33.9,64.1,-46.8,49C-59.8,33.9,-68.8,16.9,-68.2,0.6C-67.7,-15.8,-57.5,-31.6,-44.5,-44C-31.6,-56.5,-15.8,-65.7,1.9,-67.6C19.6,-69.5,39.2,-64.2,49.9,-51.7Z" transform="translate(100 100)" />
+          </svg>
+        </span>
+        <div class="row desk">
+          <div class="col-lg-8 col-md-12 ms-2">
+            <h6 class="lead">
+              ordinary person | student
             </h6>
           </div>
         </div>
-        <div class="row foto ms-3">
+        <div class="row foto ">
           <div class="col-lg-8 col-md-12">
-            <img src="img/photo_profil.png" alt="Foto Saya" width="300px">
+            <img src="img/profil img.jpg" alt="Foto Saya" width="300px" class="rounded-circle mt-4">
           </div>
-          <div class="col-lg-4 col-md-12">button</div>
+          <div class="tombol col-lg-4 col-md-12 text-center">
+            <button type="button" class="btn about-me" style="color: var(--blue);
+            border: 2px solid var(--blue);">About Me</button> <br>
+            <button type="button" class="btn mt-5 contact" style="background-color: var(--blue);">Contact</button>
+          </div>
         </div>
-        <div class="row nama ms-3">
+        <div class="row nama  mt-4">
           <div class="col-lg-8 col-md-12">
             <h1>
               Dewa <br> Prameshwara
             </h1>
           </div>
         </div>
+        
       </div>
     </section>
 

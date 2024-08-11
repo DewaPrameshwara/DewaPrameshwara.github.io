@@ -6,9 +6,11 @@
 .home {
   min-height: 100vh;
   background-color: var(--black);
-  /* background-repeat: no-repeat;
-  background-image: url(img/blob.svg);
-  background-image: url(img/photo_profil.png); */
+  overflow: hidden;
+}
+
+.home .row {
+  margin-left: 100px;
 }
 
 nav {
@@ -33,13 +35,47 @@ nav a i:hover {
 }
 
 .foto img {
-  background-image: url(img/blob.svg);
-  background-repeat: no-repeat;
-  background-size: 130%;
-  background-position: center;
+  background-color: var(--blue);
+  position: relative;
+  z-index: 1;
+  border: 3px solid var(--blue);
+  box-shadow: 0px 0px 19px rgba(128, 240, 255, 1);
 }
 
 .nama h1 {
-  color: var(--blue);
+  color: var(--black);
   font-size: 4rem;
+  font-family: pragmatica, sans-serif;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 5px;
+  -webkit-text-stroke-width: 1.5px;
+  -webkit-text-stroke-color: var(--blue);
+}
+
+.home .shapes {
+  width: 50%;
+  opacity: 0.3;
+  margin-left: 200px;
+  margin-top: -150px;
+}
+
+.home .btn {
+  font-family: pragmatica, sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  width: 200px;
+  height: 50px;
+  margin-top: 40%;
+}
+
+.home .foto .tombol .about-me:hover {
+  color: var(--black) !important;
+  background-color: var(--blue);
+}
+
+.home .foto .tombol .contact:hover {
+  color: var(--blue) !important;
+  background-color: var(--black) !important;
+  border: 2px solid var(--blue);
 }
