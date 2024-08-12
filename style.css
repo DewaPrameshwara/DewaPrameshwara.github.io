@@ -42,6 +42,19 @@ nav a i:hover {
   box-shadow: 0px 0px 19px rgba(128, 240, 255, 1);
 }
 
+.nama-foto h1 {
+  color: var(--black);
+  font-size: 1.5rem;
+  font-family: pragmatica, sans-serif;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 5px;
+  -webkit-text-stroke-width: 1.5px;
+  -webkit-text-stroke-color: var(--blue);
+  text-align: center;
+  display: none;
+}
+
 .nama h1 {
   color: var(--black);
   font-size: 4rem;
@@ -66,7 +79,7 @@ nav a i:hover {
   text-transform: uppercase;
   width: 200px;
   height: 50px;
-  margin-top: 40%;
+  margin-top: 30%;
 }
 
 .home .foto .tombol .about-me:hover {
@@ -78,4 +91,47 @@ nav a i:hover {
   color: var(--blue) !important;
   background-color: var(--black) !important;
   border: 2px solid var(--blue);
+}
+
+/* responsive breakpoint */
+
+/* tablet */
+@media (max-width: 768px) {
+}
+
+/* hp */
+@media (max-width: 576px) {
+  .nav a i {
+    font-size: 25px;
+  }
+  .desk h6 {
+    font-size: 18px;
+  }
+
+  .foto img {
+    width: 230px;
+  }
+
+  .home .tombol {
+    text-align: start !important;
+    margin-left: 10%;
+  }
+
+  .home .btn {
+    width: 160px;
+    height: 40px;
+    margin-top: 10%;
+  }
+
+  .home .contact {
+    margin-top: 10% !important;
+  }
+
+  .nama h1 {
+    display: none;
+  }
+
+  .nama-foto h1 {
+    display: block;
+  }
 }
