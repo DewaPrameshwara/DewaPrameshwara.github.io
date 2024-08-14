@@ -28,7 +28,7 @@ nav {
   display: grid;
   place-items: center;
   transition: 0.3s;
-  transform: translate(6px, 85px);
+  transform: translate(6px, 80px);
 }
 
 .back-nav:after {
