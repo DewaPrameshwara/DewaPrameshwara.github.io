@@ -8,7 +8,7 @@ const handleScroll = () => {
 
   const currentIndex = Math.floor(scrollY / (innerHeight - 200));
 
-  background.style.transform = `translateY(${currentIndex > 0 ? 75 * currentIndex : 0}px) translate(6px, 85px)`;
+  background.style.transform = `translateY(${currentIndex > 0 ? 56 * currentIndex : 0}px) translate(6px, 85px)`;
 };
 
 document.addEventListener("scroll", handleScroll, { passive: true });
