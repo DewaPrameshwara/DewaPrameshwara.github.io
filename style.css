@@ -10,8 +10,8 @@ section {
   overflow: hidden;
 }
 
-.home .row {
-  margin-left: 100px;
+.row {
+  margin-left: 90px;
 }
 
 nav {
@@ -53,7 +53,9 @@ nav a i:hover {
   color: #a70c9a;
 }
 
-.desk h6 {
+.desk h6,
+.myself h5,
+.skills h4 {
   color: var(--blue);
   font-family: pragmatica, sans-serif;
   text-transform: uppercase;
@@ -81,22 +83,23 @@ nav a i:hover {
   display: none;
 }
 
-.nama h1 {
+.nama h1,
+.myself h1 {
   color: var(--black);
-  font-size: 4rem;
+  font-size: 4.3rem;
   font-family: pragmatica, sans-serif;
   text-transform: uppercase;
   font-weight: 600;
   letter-spacing: 5px;
   -webkit-text-stroke-width: 1.5px;
   -webkit-text-stroke-color: var(--blue);
+  margin-top: -10px;
 }
 
-.home .shapes {
-  width: 50%;
-  opacity: 0.3;
-  margin-left: 200px;
-  margin-top: -150px;
+.myself p {
+  color: var(--blue);
+  font-family: pragmatica, sans-serif;
+  font-weight: 600;
 }
 
 .home .btn {
@@ -119,10 +122,28 @@ nav a i:hover {
   border: 2px solid var(--blue);
 }
 
+.about .myself {
+  margin-right: 300px;
+}
+
+.about .skills {
+  border-left: 2px solid var(--blue);
+  font-size: 30px;
+}
+
+.col-skills-icon {
+  border: 1px solid var(--gray);
+  /* padding: 20px; */
+  display: inline-flex;
+}
+
 /* responsive breakpoint */
 
 /* tablet */
 @media (max-width: 900px) {
+  .about .skills {
+    margin-top: 50px;
+  }
 }
 
 /* hp */
