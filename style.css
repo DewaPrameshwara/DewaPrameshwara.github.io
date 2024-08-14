@@ -48,13 +48,6 @@ nav a i {
   color: var(--blue);
 }
 
-.nav a.scrolled {
-  color: var(--black);
-  background-color: rgba(128, 240, 255, 0.1);
-  border: 1px solid var(--blue);
-  border-radius: 50%;
-}
-
 nav a i:hover {
   color: #a70c9a;
 }
