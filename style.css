@@ -343,6 +343,7 @@ nav a i:hover {
 
   .timeline {
     transform: translateX(-10%);
+    overflow-y: auto;
   }
 
   .title h2 {
