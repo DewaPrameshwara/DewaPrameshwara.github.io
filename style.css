@@ -55,7 +55,8 @@ nav a i:hover {
 
 .desk h6,
 .myself h5,
-.skills h4 {
+.skills h4,
+.col-skills-icon p {
   color: var(--blue);
   font-family: pragmatica, sans-serif;
   text-transform: uppercase;
@@ -134,6 +135,19 @@ nav a i:hover {
 .col-skills-icon {
   border: 1px solid var(--gray);
   padding: 10px;
+  cursor: pointer;
+}
+
+.col-skills-icon:hover {
+  border: 1px solid var(--blue);
+  filter: brightness(150%);
+}
+
+.col-skills-icon p {
+  color: var(--blue);
+  font-family: pragmatica, sans-serif;
+  text-transform: uppercase;
+  font-weight: 300;
 }
 
 /* responsive breakpoint */
