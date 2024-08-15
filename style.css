@@ -133,8 +133,7 @@ nav a i:hover {
 
 .col-skills-icon {
   border: 1px solid var(--gray);
-  /* padding: 20px; */
-  display: inline-flex;
+  padding: 10px;
 }
 
 /* responsive breakpoint */
@@ -177,5 +176,10 @@ nav a i:hover {
 
   .nama-foto h1 {
     display: block;
+  }
+
+  .about .skills {
+    border-left: none;
+    border-top: 2px solid var(--blue);
   }
 }
