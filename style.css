@@ -50,7 +50,7 @@ nav a i {
 }
 
 nav a i:hover {
-  color: #a70c9a;
+  opacity: 0.3;
 }
 
 .desk h6,
