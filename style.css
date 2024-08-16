@@ -31,6 +31,19 @@ nav {
   transition: 0.3s;
   transform: translate(6px, 85px);
 }
+.back-nav-tb {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 50px;
+  height: 50px;
+  display: grid;
+  place-items: center;
+  transition: 0.3s;
+  transform: translate(6px, 85px);
+  display: none;
+}
 
 .back-nav:after {
   content: "";
@@ -40,6 +53,17 @@ nav {
   border-radius: 50%;
   background-color: rgba(128, 240, 255, 0.1);
   border: 1px solid var(--blue);
+}
+
+.back-nav-tb:after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: rgba(128, 240, 255, 0.1);
+  border: 1px solid var(--blue);
+  display: none;
 }
 
 nav a i {
@@ -300,6 +324,25 @@ nav a i:hover {
 @media (max-width: 900px) {
   .about .skills {
     margin-top: 50px;
+    border-left: none;
+    border-top: 2px solid var(--blue);
+  }
+  .timeline li:nth-child(even) .timeline-panel {
+    transform: translate(-10px, 20px);
+  }
+  .timeline li .timeline-panel {
+    width: 80%;
+    transform: translate(-10px, 20px);
+    margin-bottom: 50px;
+  }
+
+  .back-nav {
+    display: none;
+  }
+
+  .back-nav-tb,
+  .back-nav-tb:after {
+    display: block;
   }
 }
 
@@ -336,41 +379,35 @@ nav a i:hover {
     display: block;
   }
 
-  .about .skills {
-    border-left: none;
-    border-top: 2px solid var(--blue);
-  }
-  
   .timeline-wrapper {
-  max-height: 100vh;
-  overflow-y: auto !important;
-  position: relative;
-}
+    max-height: 100vh;
+    overflow-y: auto !important;
+    position: relative;
+  }
 
   .timeline {
     transform: translateX(-20%);
     padding: 0px;
     margin: 0px;
   }
-  
+
   .timeline li .timeline-dot {
     width: 20px;
     height: 20px;
   }
-  
+
   .timeline-wrapper::-webkit-scrollbar {
-  width: 8px; /* Lebar scrollbar */
-}
+    width: 8px; /* Lebar scrollbar */
+  }
 
-.timeline-wrapper::-webkit-scrollbar-thumb {
-  background-color: rgba(128,240,255,.2); /* Warna scrollbar */
-  border-radius: 10px;
-}
+  .timeline-wrapper::-webkit-scrollbar-thumb {
+    background-color: rgba(128, 240, 255, 0.2); /* Warna scrollbar */
+    border-radius: 10px;
+  }
 
-.timeline-wrapper::-webkit-scrollbar-track {
-  background-color: var(--gray); /* Warna latar belakang scrollbar */
-}
-
+  .timeline-wrapper::-webkit-scrollbar-track {
+    background-color: var(--gray); /* Warna latar belakang scrollbar */
+  }
 
   .title h2 {
     color: var(--blue);
@@ -396,5 +433,13 @@ nav a i:hover {
   }
   .timeline-body {
     display: block;
+  }
+
+  .back-nav {
+    display: block;
+  }
+
+  .back-nav-tb {
+    display: none;
   }
 }
