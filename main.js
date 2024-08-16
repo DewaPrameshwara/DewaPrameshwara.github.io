@@ -6,7 +6,7 @@ const background = document.querySelector("#back-nav");
 const handleScroll = () => {
   const { scrollY, innerHeight } = window;
 
-  const currentIndex = Math.floor(scrollY / (innerHeight - 0));
+  const currentIndex = Math.floor(scrollY / (innerHeight + 50));
 
   background.style.transform = `translateY(${currentIndex > 0 ? 75 * currentIndex : 0}px) translate(6px, 85px)`;
 };
