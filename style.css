@@ -340,6 +340,10 @@ nav a i:hover {
     border-left: none;
     border-top: 2px solid var(--blue);
   }
+  
+  section#edu {
+    height: 100vh;
+  }
 
   .timeline {
     transform: translateX(-10%);
