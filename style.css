@@ -342,7 +342,7 @@ nav a i:hover {
   }
   
   section#edu {
-    height: 100vh;
+    max-height: ;height: 100vh;
   }
 
   .timeline {
