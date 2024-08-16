@@ -341,14 +341,36 @@ nav a i:hover {
     border-top: 2px solid var(--blue);
   }
   
-  section#edu {
-    max-height: ;height: 100vh;
-  }
+  .timeline-wrapper {
+  max-height: 100vh;
+  overflow-y: auto !important;
+  position: relative;
+}
 
   .timeline {
-    transform: translateX(-10%);
-    overflow-y: auto;
+    transform: translateX(-20%);
+    padding: 0px;
+    margin: 0px;
   }
+  
+  .timeline li .timeline-dot {
+    width: 20px;
+    height: 20px;
+  }
+  
+  .timeline-wrapper::-webkit-scrollbar {
+  width: 8px; /* Lebar scrollbar */
+}
+
+.timeline-wrapper::-webkit-scrollbar-thumb {
+  background-color: rgba(128,240,255,.2); /* Warna scrollbar */
+  border-radius: 10px;
+}
+
+.timeline-wrapper::-webkit-scrollbar-track {
+  background-color: var(--gray); /* Warna latar belakang scrollbar */
+}
+
 
   .title h2 {
     color: var(--blue);
@@ -358,11 +380,11 @@ nav a i:hover {
     font-size: 30px;
   }
   .timeline li:nth-child(even) .timeline-panel {
-    transform: translate(-9px, 50px);
+    transform: translate(45px, 40px);
   }
   .timeline li .timeline-panel {
-    width: 65%;
-    transform: translate(-9px, 50px);
+    width: 80%;
+    transform: translate(45px, 40px);
     margin-bottom: 50px;
   }
 
