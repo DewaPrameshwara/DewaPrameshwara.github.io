@@ -80,7 +80,8 @@ nav a i:hover {
 .desk h6,
 .myself h5,
 .skills h4,
-.col-skills-icon p {
+.col-skills-icon p,
+.form-label {
   color: var(--blue);
   font-family: pragmatica, sans-serif;
   text-transform: uppercase;
@@ -294,6 +295,18 @@ nav a i:hover {
   background-color: var(--gray);
   color: var(--blue);
   margin-top: 2rem;
+}
+
+.form-text,
+.or {
+  color: var(--blue);
+  font-family: pragmatica, sans-serif;
+  font-weight: 300;
+  opacity: 0.3;
+}
+
+.button-wrap a:hover {
+  opacity: 0.5;
 }
 
 /* responsive breakpoint */
