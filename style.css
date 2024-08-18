@@ -489,4 +489,8 @@ nav a i:hover {
   .my-card .col-md-4 {
     margin-right: 0;
   }
+
+  .button-wrap {
+    display: block !important;
+  }
 }
