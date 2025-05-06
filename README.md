@@ -1,3 +1,3 @@
 Hi There👋👋
 
-Link for my pertofolio ---> https://depram.github.io/
+Link for my portofolio ---> https://depram.github.io/
